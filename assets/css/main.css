@@ -9,21 +9,26 @@ a {
   text-decoration: none;
 }
 header {
-  padding: 40px;
+  padding: 40px 100px;
   position: relative;
   display: flex;
   justify-content: space-between;
+}
+header .logo {
+  width: 250px;
+  background: url(../imagens/logo.svg) no-repeat;
+  text-indent: -9000px;
 }
 header .tente-gratis button {
   cursor: pointer;
   background: transparent;
   padding: 10px 20px;
-  border: 2px solid #eb8cab;
+  border: 2px solid #fd53c0;
   border-radius: 20px;
-  color: #eb8cab;
+  color: #fd53c0;
 }
 header .tente-gratis button:hover {
-  background-color: #eb8cab;
+  background-color: #fd53c0;
   color: white;
 }
 #container1 {
@@ -36,21 +41,75 @@ header .tente-gratis button:hover {
   justify-content: center;
   align-items: center;
 }
-#container1 .conteudo1 h2 {
-  font-size: 2.5em;
+#container1 .conteudo1 h1 {
+  font-size: 3.5em;
 }
 #container1 .conteudo1 p {
+  font-size: 20px;
   margin-top: 15px;
-  width: 420px;
+  width: 40%;
   text-align: center;
 }
 #container1 .conteudo1 button {
+  cursor: pointer;
   font-size: 1.3em;
-  background: #eb8cab;
+  background: #fd53c0;
   color: white;
-  border: 2px solid #eb8cab;
+  border: 2px solid #fd53c0;
   padding: 20px 50px;
   margin-top: 30px;
   border-radius: 30px;
   width: 300px;
+}
+#container1 .conteudo1 button:hover {
+  background: transparent;
+  color: #fd53c0;
+}
+#container1 .conteudo1 img {
+  margin-top: 80px;
+}
+section#numeros {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 220px 300px 220px;
+  background: url(../imagens/bg-section-top-desktop-1.svg) no-repeat bottom;
+}
+section#numeros .um h3 {
+  font-size: 90px;
+}
+section#numeros .um p {
+  color: #a7a7a7;
+  text-align: center;
+  font-size: 25px;
+}
+section#grow-together {
+  background-color: #f6fbff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+section#grow-together .conteudo-grow-together {
+  width: 730px;
+}
+section#grow-together .conteudo-grow-together h3 {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+section#grow-together .conteudo-grow-together p {
+  padding-top: 30px;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+section#grow-together .imagem {
+  padding-left: 100px;
+}
+section#grow-together .imagem img {
+  width: 80%;
+}
+section#flowing-conversation {
+  background: url(../imagens/bg-section-bottom-desktop-1.svg) no-repeat top;
+  padding: 300px 220px 0px 220px;
 }

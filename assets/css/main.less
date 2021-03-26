@@ -1,3 +1,7 @@
+@rosa:#fd53c0;
+@fundo:#f6fbff;
+@cinza:#a7a7a7;
+
 *{
     margin: 0;
     padding: 0;
@@ -12,20 +16,25 @@ a{
 }
 
 header{
-    padding: 40px;
+    padding: 40px 100px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    .logo{
+        width: 250px;
+        background: url(../imagens/logo.svg) no-repeat;
+        text-indent: -9000px;
+    }
     .tente-gratis{
         button{
             cursor: pointer;
             background: transparent;
             padding: 10px 20px;
-            border: 2px solid rgb(235, 140, 171);
+            border: 2px solid @rosa;
             border-radius: 20px;
-            color: rgb(235, 140, 171);
+            color: @rosa;
             &:hover{
-                background-color: rgb(235, 140, 171) ;
+                background-color: @rosa ;
                 color: white;
             }
         }
@@ -40,24 +49,82 @@ header{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        h2{
-            font-size: 2.5em;
+        h1{
+            font-size: 3.5em;
         }
         p{
+            font-size: 20px;
             margin-top: 15px;
-            width: 420px;
+            width: 40%;
             text-align: center;
         }
         button{
+            cursor: pointer;
             font-size: 1.3em;
-            background: rgb(235, 140, 171);
+            background: @rosa;
             color: white;
-            border: 2px solid rgb(235, 140, 171);
+            border: 2px solid @rosa;
             padding: 20px 50px;
             margin-top: 30px;
             border-radius: 30px;
             width: 300px;
-            
+            &:hover{
+                background: transparent;
+                color: @rosa;
+            }
+        }
+        img{
+            margin-top: 80px;
         }
     }
+}
+
+section#numeros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 220px 300px 220px;
+    background: url(../imagens/bg-section-top-desktop-1.svg) no-repeat bottom;
+    .um{
+        h3{
+            font-size: 90px;
+        }
+        p{
+            color: @cinza;
+            text-align: center;
+            font-size: 25px;
+        }
+    }
+}
+
+section#grow-together{
+    background-color: @fundo;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    .conteudo-grow-together{
+        width: 730px;
+        h3{
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+        }
+        p{
+            padding-top: 30px;
+            color: @cinza;
+            font-size: 16px;
+        }
+    }
+    .imagem{
+        padding-left: 100px;
+        img{
+            width: 80%;
+        }
+    }
+}
+
+section#flowing-conversation{
+    background: url(../imagens/bg-section-bottom-desktop-1.svg) no-repeat top;
+    padding: 300px 220px 0px 220px;
 }
