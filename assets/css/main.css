@@ -31,26 +31,26 @@ header .tente-gratis button:hover {
   background-color: #fd53c0;
   color: white;
 }
-#container1 {
+article#container1 {
   width: 100%;
   margin: 50px 50px;
 }
-#container1 .conteudo1 {
+article#container1 section.conteudo1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-#container1 .conteudo1 h1 {
+article#container1 section.conteudo1 h1 {
   font-size: 3.5em;
 }
-#container1 .conteudo1 p {
+article#container1 section.conteudo1 p {
   font-size: 20px;
   margin-top: 15px;
   width: 40%;
   text-align: center;
 }
-#container1 .conteudo1 button {
+article#container1 section.conteudo1 button {
   cursor: pointer;
   font-size: 1.3em;
   background: #fd53c0;
@@ -61,55 +61,142 @@ header .tente-gratis button:hover {
   border-radius: 30px;
   width: 300px;
 }
-#container1 .conteudo1 button:hover {
+article#container1 section.conteudo1 button:hover {
   background: transparent;
   color: #fd53c0;
 }
-#container1 .conteudo1 img {
+article#container1 section.conteudo1 img {
   margin-top: 80px;
 }
-section#numeros {
+article#numeros {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0px 220px 300px 220px;
   background: url(../imagens/bg-section-top-desktop-1.svg) no-repeat bottom;
 }
-section#numeros .um h3 {
+article#numeros section.um h3 {
   font-size: 90px;
 }
-section#numeros .um p {
+article#numeros section.um p {
   color: #a7a7a7;
   text-align: center;
   font-size: 25px;
 }
-section#grow-together {
+article#grow-together {
   background-color: #f6fbff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 100px;
 }
-section#grow-together .conteudo-grow-together {
+article#grow-together section.conteudo-grow-together {
   width: 730px;
 }
-section#grow-together .conteudo-grow-together h3 {
+article#grow-together section.conteudo-grow-together h3 {
   font-size: 32px;
   display: flex;
   justify-content: center;
 }
-section#grow-together .conteudo-grow-together p {
-  padding-top: 30px;
+article#grow-together section.conteudo-grow-together p {
+  margin-top: 30px;
   color: #a7a7a7;
   font-size: 16px;
 }
-section#grow-together .imagem {
+article#grow-together section.imagem {
   padding-left: 100px;
 }
-section#grow-together .imagem img {
+article#grow-together section.imagem img {
   width: 80%;
 }
-section#flowing-conversation {
+article#flowing-conversation {
   background: url(../imagens/bg-section-bottom-desktop-1.svg) no-repeat top;
   padding: 300px 220px 0px 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+article#flowing-conversation section.imagem-flowing-conversation {
+  padding-right: 100px;
+}
+article#flowing-conversation section.imagem-flowing-conversation img {
+  width: 80%;
+}
+article#flowing-conversation section.conteudo-flowing-conversation {
+  width: 730px;
+}
+article#flowing-conversation section.conteudo-flowing-conversation h3 {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+article#flowing-conversation section.conteudo-flowing-conversation p {
+  margin-top: 30px;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+article#topo-your-users {
+  background: url(../imagens/bg-section-top-desktop-2.svg) no-repeat bottom;
+  padding: 300px 220px 0 220px ;
+}
+article#your-users {
+  background-color: #f6fbff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+article#your-users section.conteudo-your-users {
+  width: 730px;
+}
+article#your-users section.conteudo-your-users h3 {
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+}
+article#your-users section.conteudo-your-users p {
+  margin-top: 30px;
+  color: #a7a7a7;
+  font-size: 16px;
+}
+article#your-users section.imagem-your-users {
+  padding-left: 100px;
+}
+article#your-users section.imagem-your-users img {
+  width: 80%;
+}
+article#bottom-your-users {
+  background: url(../imagens/bg-section-bottom-desktop-2.svg) no-repeat top;
+  padding: 300px 220px 0 220px ;
+}
+article#ready {
+  width: 100%;
+  margin: 50px 50px;
+}
+article#ready section.conteudo1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+article#ready section.conteudo1 h1 {
+  font-size: 3.5em;
+}
+article#ready section.conteudo1 button {
+  cursor: pointer;
+  font-size: 1.3em;
+  background: #fd53c0;
+  color: white;
+  border: 2px solid #fd53c0;
+  padding: 20px 50px;
+  margin-top: 30px;
+  border-radius: 30px;
+  width: 300px;
+}
+article#ready section.conteudo1 button:hover {
+  background: transparent;
+  color: #fd53c0;
+}
+article#ready section.conteudo1 img {
+  margin-top: 80px;
 }
