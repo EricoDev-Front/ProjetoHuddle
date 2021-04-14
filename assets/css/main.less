@@ -1,6 +1,7 @@
 @rosa:#fd53c0;
 @fundo:#f6fbff;
 @cinza:#a7a7a7;
+@footer:#01262f;
 
 *{
     margin: 0;
@@ -33,6 +34,7 @@ header{
             border: 2px solid @rosa;
             border-radius: 20px;
             color: @rosa;
+            margin-top: 20px;
             &:hover{
                 background-color: @rosa ;
                 color: white;
@@ -42,8 +44,7 @@ header{
 }
 
 article#container1{
-    width: 100%;
-    margin: 50px 50px;
+    margin-top: 50px;
     section.conteudo1{
         display: flex;
         flex-direction: column;
@@ -74,7 +75,7 @@ article#container1{
             }
         }
         img{
-            margin-top: 80px;
+            margin: 80px 25px;
         }
     }
 }
@@ -85,6 +86,7 @@ article#numeros{
     align-items: center;
     padding: 0px 220px 300px 220px;
     background: url(../imagens/bg-section-top-desktop-1.svg) no-repeat bottom;
+    background-size: contain;
     section.um{
         h3{
             font-size: 90px;
@@ -94,6 +96,9 @@ article#numeros{
             text-align: center;
             font-size: 25px;
         }
+    }
+    section.dois{
+        width: 100%;
     }
 }
 
@@ -126,6 +131,7 @@ article#grow-together{
 
 article#flowing-conversation{
     background: url(../imagens/bg-section-bottom-desktop-1.svg) no-repeat top;
+    background-size: contain;
     padding: 300px 220px 0px 220px;
     display: flex;
     justify-content: space-between;
@@ -153,6 +159,7 @@ article#flowing-conversation{
 
 article#topo-your-users{
     background: url(../imagens/bg-section-top-desktop-2.svg) no-repeat bottom;
+    background-size: contain;
     padding: 300px 220px 0 220px ;
 }
 
@@ -185,12 +192,13 @@ article#your-users{
 
 article#bottom-your-users{
     background: url(../imagens/bg-section-bottom-desktop-2.svg) no-repeat top;
+    background-size: contain;
     padding: 300px 220px 0 220px ;
 }
 
 article#ready{
     width: 100%;
-    margin: 50px 50px;
+    margin-top: 50px;
     section.conteudo1{
         display: flex;
         flex-direction: column;
@@ -216,6 +224,109 @@ article#ready{
         }
         img{
             margin-top: 80px;
+        }
+    }
+}
+
+article#topo-footer{
+    background: url(../imagens/bg-footer-top-desktop.svg) no-repeat bottom;
+    background-size: contain;
+    margin-top: 100px;
+    padding: 200px 220px 0 220px ;
+}
+
+footer{
+    background: @footer;
+    padding: 0px 100px 50px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .column1{
+        width: 30%;
+        .logo{
+            display: flex;
+            align-items: center;
+            .email{
+                color: white;
+                font-size: 40px;
+                margin-right: 25px;
+            }
+            h2{
+                font-size: 80px;
+                color: white;
+            }
+        }
+        .text{
+            color: white;
+            font-size: 18px;
+            margin: 10px 0px 30px 0px;
+        }
+        .phone{
+            display: flex;
+            align-items: center;
+            .phone{
+                color: white;
+                font-size: 20px;
+                margin-right: 15px;
+            }
+            p{
+                color: white;
+                font-size: 16px;
+            }
+        }
+        .email{
+            display: flex;
+            margin-top: 15px;
+            align-items: center;
+            .email-icon{
+                color: white;
+                font-size: 20px;
+                margin-right: 15px;
+            }
+            p{
+                color: white;
+                font-size: 18px;
+            }
+        }
+    }
+    .newsletter{
+        width: 40%;
+        .titulo{
+            h2{
+                font-size: 40px;
+                color: white;
+            }
+        }
+        .text{
+            color: white;
+            font-size: 18px;
+            margin: 10px 0px 30px 0px;
+            width: 75%;
+        }
+        .input{
+            display: flex;
+            input{
+                width: 300px;
+                height: 40px;
+                border: none;
+                padding-left: 10px;
+                border-radius: 3px;
+            }
+            button{
+                color: white;
+                background: @rosa;
+                border-radius: 3px;
+                margin-left: 15px;
+                border: none;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-weight: bold;
+                &:hover{
+                    background: transparent;
+                    border: 2px solid @rosa;
+                    color: @rosa;
+                }
+            }
         }
     }
 }

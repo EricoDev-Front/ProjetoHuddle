@@ -26,14 +26,14 @@ header .tente-gratis button {
   border: 2px solid #fd53c0;
   border-radius: 20px;
   color: #fd53c0;
+  margin-top: 20px;
 }
 header .tente-gratis button:hover {
   background-color: #fd53c0;
   color: white;
 }
 article#container1 {
-  width: 100%;
-  margin: 50px 50px;
+  margin-top: 50px;
 }
 article#container1 section.conteudo1 {
   display: flex;
@@ -66,7 +66,7 @@ article#container1 section.conteudo1 button:hover {
   color: #fd53c0;
 }
 article#container1 section.conteudo1 img {
-  margin-top: 80px;
+  margin: 80px 25px;
 }
 article#numeros {
   display: flex;
@@ -74,6 +74,7 @@ article#numeros {
   align-items: center;
   padding: 0px 220px 300px 220px;
   background: url(../imagens/bg-section-top-desktop-1.svg) no-repeat bottom;
+  background-size: contain;
 }
 article#numeros section.um h3 {
   font-size: 90px;
@@ -82,6 +83,9 @@ article#numeros section.um p {
   color: #a7a7a7;
   text-align: center;
   font-size: 25px;
+}
+article#numeros section.dois {
+  width: 100%;
 }
 article#grow-together {
   background-color: #f6fbff;
@@ -111,6 +115,7 @@ article#grow-together section.imagem img {
 }
 article#flowing-conversation {
   background: url(../imagens/bg-section-bottom-desktop-1.svg) no-repeat top;
+  background-size: contain;
   padding: 300px 220px 0px 220px;
   display: flex;
   justify-content: space-between;
@@ -137,6 +142,7 @@ article#flowing-conversation section.conteudo-flowing-conversation p {
 }
 article#topo-your-users {
   background: url(../imagens/bg-section-top-desktop-2.svg) no-repeat bottom;
+  background-size: contain;
   padding: 300px 220px 0 220px ;
 }
 article#your-users {
@@ -167,11 +173,12 @@ article#your-users section.imagem-your-users img {
 }
 article#bottom-your-users {
   background: url(../imagens/bg-section-bottom-desktop-2.svg) no-repeat top;
+  background-size: contain;
   padding: 300px 220px 0 220px ;
 }
 article#ready {
   width: 100%;
-  margin: 50px 50px;
+  margin-top: 50px;
 }
 article#ready section.conteudo1 {
   display: flex;
@@ -199,4 +206,103 @@ article#ready section.conteudo1 button:hover {
 }
 article#ready section.conteudo1 img {
   margin-top: 80px;
+}
+article#topo-footer {
+  background: url(../imagens/bg-footer-top-desktop.svg) no-repeat bottom;
+  background-size: contain;
+  margin-top: 100px;
+  padding: 200px 220px 0 220px ;
+}
+footer {
+  background: #01262f;
+  padding: 0px 100px 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .column1 {
+  width: 30%;
+}
+footer .column1 .logo {
+  display: flex;
+  align-items: center;
+}
+footer .column1 .logo .email {
+  color: white;
+  font-size: 40px;
+  margin-right: 25px;
+}
+footer .column1 .logo h2 {
+  font-size: 80px;
+  color: white;
+}
+footer .column1 .text {
+  color: white;
+  font-size: 18px;
+  margin: 10px 0px 30px 0px;
+}
+footer .column1 .phone {
+  display: flex;
+  align-items: center;
+}
+footer .column1 .phone .phone {
+  color: white;
+  font-size: 20px;
+  margin-right: 15px;
+}
+footer .column1 .phone p {
+  color: white;
+  font-size: 16px;
+}
+footer .column1 .email {
+  display: flex;
+  margin-top: 15px;
+  align-items: center;
+}
+footer .column1 .email .email-icon {
+  color: white;
+  font-size: 20px;
+  margin-right: 15px;
+}
+footer .column1 .email p {
+  color: white;
+  font-size: 18px;
+}
+footer .newsletter {
+  width: 40%;
+}
+footer .newsletter .titulo h2 {
+  font-size: 40px;
+  color: white;
+}
+footer .newsletter .text {
+  color: white;
+  font-size: 18px;
+  margin: 10px 0px 30px 0px;
+  width: 75%;
+}
+footer .newsletter .input {
+  display: flex;
+}
+footer .newsletter .input input {
+  width: 300px;
+  height: 40px;
+  border: none;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+footer .newsletter .input button {
+  color: white;
+  background: #fd53c0;
+  border-radius: 3px;
+  margin-left: 15px;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+footer .newsletter .input button:hover {
+  background: transparent;
+  border: 2px solid #fd53c0;
+  color: #fd53c0;
 }
